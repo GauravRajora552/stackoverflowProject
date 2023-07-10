@@ -46,7 +46,7 @@ function Premium() {
   const payNow = async token => {
     try {
       const response = await axios({
-        url: 'http://localhost:5000/payment',
+        url: 'https://stackoverflowproject.onrender.com/payment',
         method: 'post',
         data: {
           amount: product.price,
